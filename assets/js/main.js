@@ -2,6 +2,7 @@ $(function () {
     'use strict';
     featured();
     pagination(false);
+    scrollToTop();
 });
 
 function featured() {
@@ -25,5 +26,31 @@ function featured() {
                 items: 3,
             },
         },
+    });
+}
+
+function scrollToTop() {
+    'use strict';
+    
+    const scrollButton = $('#scrollToTop');
+    
+    // Show/hide button on scroll
+    $(window).scroll(function() {
+        const scrollTop = $(window).scrollTop();
+        
+        // Show button when scrolled down 200px
+        if (scrollTop > 200) {
+            scrollButton.fadeIn(300);
+        } else {
+            scrollButton.fadeOut(300);
+        }
+    });
+    
+    // Smooth scroll to top when clicked
+    scrollButton.click(function(e) {
+        e.preventDefault();
+        $('html, body').animate({
+            scrollTop: 0
+        }, 500);
     });
 }

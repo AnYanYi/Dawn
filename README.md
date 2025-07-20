@@ -1,12 +1,38 @@
-这是一个基于官方 Dawn 主题的高度功能性 Ghost 主题，它在原版的基础上进行了多项优化，以适应读者的偏好，并提升网站性能与用户体验。
+# Dawn
 
-Demo: https://tbbbk.com 
+A highly functional [Ghost](https://github.com/TryGhost/Ghost) theme that adapts to the reader's preferences. Let them read, search, subscribe, navigate, and more with ease.
 
-核心优化 ✨
-这个版本在官方 Dawn 主题的基础上，增加了以下核心优化：
+**Demo: https://dawn.ghost.io**
 
-全新的标签云模板：创建了独立的 tags 模板，让所有标签以现代化、美观的方块样式展示，一目了然。
+# Instructions
 
-返回顶部按钮：在右下角添加了方便的“返回顶部”按钮，让读者在浏览长篇文章后可以轻松回到页首。
+1. [Download this theme](https://github.com/TryGhost/Dawn/archive/main.zip)
+2. Log into Ghost, and go to the `Design` settings area to upload the zip file
 
-极致的速度优化：移除了所有自定义网络字体，完全依赖用户电脑的系统字体。这极大地减少了HTTP请求，显著加快了网站加载速度。
+# Development
+
+Styles are compiled using Gulp/PostCSS to polyfill future CSS spec. You'll need [Node](https://nodejs.org/), [Yarn](https://yarnpkg.com/) and [Gulp](https://gulpjs.com) installed globally. After that, from the theme's root directory:
+
+```bash
+# Install
+yarn
+
+# Run build & watch for changes
+yarn dev
+```
+
+Now you can edit `/assets/css/` files, which will be compiled to `/assets/built/` automatically.
+
+The `zip` Gulp task packages the theme files into `dist/dawn.zip`, which you can then upload to your site.
+
+```bash
+yarn zip
+```
+
+# Contribution
+
+This repo is synced automatically with [TryGhost/Themes](https://github.com/TryGhost/Themes) monorepo. If you're looking to contribute or raise an issue, head over to the main repository [TryGhost/Themes](https://github.com/TryGhost/Themes) where our official themes are developed.
+
+# Copyright & License
+
+Copyright (c) 2013-2025 Ghost Foundation - Released under the [MIT license](LICENSE).

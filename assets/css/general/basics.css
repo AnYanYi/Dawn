@@ -23,8 +23,8 @@
     --instagram-color: #000000;
     --rss-color: #f26522;
     --animation-base: ease-in-out;
-    --font-sans: Mulish, -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif;
-    --font-serif: Lora, Times, serif;
+    --font-sans: "PingFang SC", -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei", "微软雅黑", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --font-serif: "PingFang SC", Georgia, "Times New Roman", Times, "Songti SC", serif;
     --font-mono: Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace;
     --navbar-height: 80px;
     --content-font-size: 1.7rem;
